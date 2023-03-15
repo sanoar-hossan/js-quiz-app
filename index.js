@@ -185,3 +185,14 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+
+//add blog button for new tab
+// Get the button element
+const blogButton = document.getElementById("blog");
+
+// Add an event listener for when the button is clicked
+blogButton.addEventListener("click", function() {
+  // Open the blog page in a new tab (replace "example.com/blog" with the actual URL)
+  window.open("blog.html", "_blank");
+});
