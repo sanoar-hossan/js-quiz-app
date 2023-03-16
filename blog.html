@@ -56,5 +56,10 @@
   
     <h2>quizTimer function provides a way to set up and start a timer for a quiz, with the ability to dismiss the timer if needed.The quizTimer function is responsible for setting up and starting a timer for a quiz.It takes a dismiss parameter, which is a boolean value that indicates whether the timer should be dismissed or not. If dismiss is true, the function clears the timer interval using the clearInterval method and returns. This means that the timer is stopped and will no longer update.</h2>
 </div>
+<h1 class="heading">Question-4:What is chooseQuiz functions work?</h1>
+<div class="filter-content">
+  
+    <h2>The chooseQuiz function is responsible for updating the answers array with the selected answer for a quiz question and then updating the display to reflect the change.The chooseQuiz function takes two parameters: index and givenAns. It is called when a user selects an answer for a quiz question.The function first checks whether there is already an answer in the answers array for the current quiz question. It does this by using the find method to look for an object in the answers array that has an id property matching the id of the current quiz question. If an existing answer is found, the function updates the answer by replacing it with a new object that has the same properties as the current quiz question object but with the givenAns property set to the value of the givenAns parameter. This is done by iterating through the answers array and using the splice method to replace the existing answer with the new object.</h2>
+</div>
 </body>
 </html>
