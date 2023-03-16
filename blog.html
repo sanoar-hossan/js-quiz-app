@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Question-1: What is the difference between map,foreach,filter and find.</h1>
+    <div class="all-content">
+        <div class="map-content">
+            <h1 class="heading">Map</h1>
+            <h2>The map method loops through each element in array and calls the provided function for each element. This method creates a new array and the original array is not modified.The result of the function is added to the new array in the same order as the original elements.</h2>
+        </div>
+        <div class="foreach-content">
+            <h1 class="heading">Foreach</h1>
+            <h2>forEach is used to execute the same code on every element in an array but does not change the array and it returns undefined.</h2>
+        </div>
+        <div class="filter-content">
+            <h1 class="heading">Filter</h1>
+            <h2>The filter method in JavaScript creates a new array with the elements  the provided condition. This method calls a provided function for each element in array and verifies the condition given in the provided function and passes only those elements that satisfy the given condition.</h2>
+        </div>
+        <div class="find-content">
+            <h1 class="heading">Find</h1>
+            <h2>This method returns first element of the array that satisfies the condition specified in the callback function.It does not create a new array.If no element passes the test, undefined is returned</h2>
+        </div>
+    </div>
+
+    <h1 class="heading">Question-2: What is the difference between cookies,local storage and session storage.</h1>
+    <div class="all-content">
+        <div class="map-content">
+            <h1 class="heading">Cookies</h1>
+            <h2>Cookies are small text files that are stored on the user's computer by the browser.Cookies have a size limit of 4KB. Cookies are vulnerable to Cross-Site Scripting (XSS) attacks, where malicious code can read or modify the contents of cookies.cookies are best used for storing small amounts of data that need to be sent to the server with every request.</h2>
+        </div>
+        <div class="foreach-content">
+            <h1 class="heading">Local Storage</h1>
+            <h2> Local Storage is a type of browser storage that allows you to store data on a user's browser without an expiration date.Local Storage has a much larger size limit than cookies, typically around 5-10MB depending on the browser.Local Storage is not vulnerable to CSRF attacks, but it is vulnerable to XSS attacks if the data stored in it is not properly sanitized.</h2>
+        </div>
+        <div class="filter-content">
+            <h1 class="heading">Session Storage</h1>
+            <h2>Session Storage is similar to Local Storage, but the data is cleared when the user closes their browser or the tab.Session Storage has the same size limit as Local Storage, but the data is cleared when the session ends.Session Storage is also not vulnerable to CSRF attacks, but it is vulnerable to XSS attacks if the data stored in it is not properly sanitized. </h2>
+        </div>
+        
+    </div>
+
+    <h1 class="heading">Question-3: What is Event loop and how it works?</h1>
+    <div class="filter-content">
+        
+        <h2>The Event Loop is a core concept in JavaScript that helps manage how code is executed in a non-blocking and efficient way.Event Loop is a mechanism that continuously checks the call stack and the task queue.When the call stack is empty, the Event Loop takes the first function from the task queue and pushes it onto the call stack to be executed.<br>how the Event Loop works:JavaScript code is executed in a single-threaded environment, which means that only one task can be executed at a time. If a function makes an asynchronous call  the JavaScript engine does not wait for the call to complete. When the call stack is empty, the Event Loop checks the task queue for any pending tasks. This process is repeated continuously, resulting in a cycle that is known as the Event Loop.</h2>
+    </div>
+
+<h1 class="heading">Question-4: What is quizTimer functions work?</h1>
+<div class="filter-content">
+  
+    <h2>quizTimer function provides a way to set up and start a timer for a quiz, with the ability to dismiss the timer if needed.The quizTimer function is responsible for setting up and starting a timer for a quiz.It takes a dismiss parameter, which is a boolean value that indicates whether the timer should be dismissed or not. If dismiss is true, the function clears the timer interval using the clearInterval method and returns. This means that the timer is stopped and will no longer update.</h2>
+</div>
+</body>
+</html>
